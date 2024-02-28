@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WHERE'S WELDO</title>
+    <style type="text/css">
+        body{
+            background-image:url('file:///D:/Xampp/New%20folder/htdocs/example/wallpaperflare.com_wallpaper(3).jpg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .Game-Container{
+            position: relative;
+            width: 1300px;
+            
+        }
+        .Scene{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        #Scene{
+            width: 1960px;
+            height: 1820px;
+            background-attachment: fixed;
+            background-size: 100%;
+            
+        }
+        .Object{
+            position: absolute;
+            background-color: transparent;
+            cursor: pointer;
+
+        }
+        #Waldo{
+            width: 40px;
+            height: 40px;
+            
+            bottom: 100px;
+            left: 1100px;
+        }
+        #Count-Down{
+            position: fixed;
+            top: 0;
+            right: 20px;
+            font-size: 20px;    
+
+        }
+        .Point-Section{
+            position: fixed;
+            top: 0px;
+            left: 40px;
+            font-size: 20px;
+            font-family: Georgia, serif;    
+        }
+        .incrementButton1{
+            top: 0;
+            color: black;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 480px;
+            left: 1250px;
+            opacity: 0;
+            cursor: pointer;
+            background-color: black;
+        }
+        .incrementButton2{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            left: 500px;
+            top: -10px;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .incrementButton3{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 350px;
+            left: 480px;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .incrementButton4{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            left: 680px;
+            top: 80px;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .popup-contains{
+             display: none;
+             background-image: url('file:///D:/New%20folder%20(2)/pxfuel.jpg');
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             width: 600px;
+             height: 400px;
+             margin: 0;
+             background-color: #000000;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: 100% 100%;
+             position: relative;
+             right: 400px;
+             font-size: 30px;
+             font-style: fenix;
+             color: #F0EAD6;
+        }
+        .popup-contains1{
+            display: none;
+             background-image: url('file:///D:/New%20folder%20(2)/pxfuel.jpg');
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             width: 600px;
+             height: 400px;
+             margin: 0;
+             background-color: #000000;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: 100% 100%;
+             position: relative;
+             right: 400px;
+             font-size: 30px;
+             font-style: fenix;
+             color: #F0EAD6;
+            
+
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class = "Game-Container">
+        <div class = "Scene" >
+            <img src="" alt="" id="Scene">
+            <div class="Object" id="Waldo"></div>
+            <p id = "Count-Down">COUNT-DOWN LEFT: 1:00</p>
+    <div class="Point-Section">        
+        <h1>Points: </h1>
+
+        <p>
+                <span id="Points1">0</span>
+                <button class="incrementButton1" data-points="points1"></button>
+        </p>
+
+        <p>
+                <span id="Points2">0</span>
+                <button class="incrementButton2" data-points="points2"></button>
+        </p>
+
+        <p>
+                <span id="Points3">0</span>
+                <button class="incrementButton3" data-points="points3"></button>
+        </p>
+
+        <p>
+                <span id="Points4">0</span>
+                <button class="incrementButton4" data-points="points4"></button>
+        </p>
+
+    </div>
+            
+
+        </div>
+    </div>
+
+
+    <div class="popup" id="popup-lose">
+        <div class="popup-contains">
+            <h2>You Lose.</h2>
+            
+        </div>
+    </div>
+
+    <div class="pop-up" id="popup-win">
+        <div class="popup-contains1">
+            <h2>You Win.</h2>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
